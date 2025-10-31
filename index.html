@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SA Weather | Live South African Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>SA Weather</h1>
+    <p>Live South African Weather Forecast</p>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="cityInput" placeholder="Search city (e.g. Durban)" />
+    <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+  </div>
+
+  <div class="quick-buttons">
+    <button onclick="getWeather('Johannesburg')">Johannesburg</button>
+    <button onclick="getWeather('Cape Town')">Cape Town</button>
+    <button onclick="getWeather('Durban')">Durban</button>
+    <button onclick="getWeather('Pretoria')">Pretoria</button>
+    <button onclick="getWeather('Bloemfontein')">Bloemfontein</button>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+    <p>Loading weather data...</p>
+  </div>
+
+  <div id="weatherContainer" class="weather-card">
+    <h2 id="cityName"></h2>
+    <p id="description"></p>
+    <div class="weather-icon">
+      <img id="icon" src="" alt="Weather Icon">
+    </div>
+    <div class="temp" id="temperature"></div>
+    <div class="details" id="details"></div>
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <footer>
+    <p>Powered by <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a> | Built with ❤️ in South Africa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
