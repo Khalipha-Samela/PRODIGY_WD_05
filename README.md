@@ -47,9 +47,11 @@ Through this task, I gained hands-on experience with:
 - const apiKey = "";
 - with your actual key from **https://openweathermap.org/api.**
 
+---
+
 ## 🚀 Live Demo
  
-- **Deployment:** [] 
+- **Netlify:** [https://sa-live-forecast.netlify.app/] 
 - **GitHub:** [https://github.com/Khalipha-Samela/PRODIGY_WD_05.git]
 
 ---
